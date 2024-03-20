@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - About</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Include Google Fonts link here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300|Raleway:200|Montserrat:300">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="logo">
+                <div class="name">EDAH ŠAHINOVIĆ</div>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="/">ABOUT ME</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li class="dropdown">
+                            <a href="">THESIS</a>
+                            <div class="dropdown-content">
+                                <a href="thesis-bachelor.html">BACHELOR</a>
+                                <a href="thesis-master.html">MASTER</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+    
+        <div class="page-container">
+
+
+            <!-- Box in the middle with text and image -->
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="first-name" class="input-label">First Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="last-name" class="input-label">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone" class="input-label">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message" class="input-label">Message</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            
+            <script>
+                // Get all input fields and their corresponding labels
+                const inputFields = document.querySelectorAll('.form-group input, .form-group textarea');
+            
+                // Add event listeners to each input field
+                inputFields.forEach(inputField => {
+                    inputField.addEventListener('input', function() {
+                        // Hide the label if the input field is not empty or if the list is populated
+                        if (this.value.trim() !== '' || this.value.trim() === this.getAttribute('placeholder')) {
+                            this.previousElementSibling.classList.add('hidden');
+                        } else {
+                            this.previousElementSibling.classList.remove('hidden');
+                        }
+                    });
+            
+                    // Add event listener to handle the case when the input field loses focus
+                    inputField.addEventListener('blur', function() {
+                        // If the input field is empty, show the label
+                        if (this.value.trim() === '') {
+                            this.previousElementSibling.classList.remove('hidden');
+                        }
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function() {
+                const contactForm = document.getElementById('contact-form');
+
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    // Get form data
+                    const formData = {
+                        'first-name': document.getElementById('first-name').value,
+                        'last-name': document.getElementById('last-name').value,
+                        'email': document.getElementById('email').value,
+                        'phone': document.getElementById('phone').value,
+                        'message': document.getElementById('message').value
+                    };
+
+                    // Retrieve existing data from Local Storage or initialize an empty array
+                    let submissions = JSON.parse(localStorage.getItem('contact-submission')) || [];
+
+                    // Append new form data to the array
+                    submissions.push(formData);
+
+                    // Store the updated data back to Local Storage
+                    localStorage.setItem('contact-submission', JSON.stringify(submissions));
+
+                    // Optionally, you can clear the form fields after submission
+                    contactForm.reset();
+
+                    // Optionally, you can display a confirmation message to the user
+                    alert('Form submitted successfully!');
+                });
+            });
+
+
+            </script>
+            
+            
+
+            
+
+            <!-- Contact details as images -->
+            <div class="contact-icons" style="margin-top: 100px;">
+                <a href="mailto:sahinovic_edah@hotmail.com">
+                    <img src="assets/images/home/email_logo.png" alt="Email Me" class="email-image">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/edah-sahinovic/" target="_blank">
+                    <img src="assets/images/home/linkedin_logo.png" alt="LinkedIn Profile" class="linkedin-image">
+                </a>
+
+                <a href="https://github.com/Edah94" target="_blank">
+                    <img src="assets/images/home/github_logo.png" alt="GitHub Profile" class="github-image">
+                </a>
+            </div>
+
+
+
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edah Šahinović | Projects</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Google Fonts link here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300|Raleway:200|Montserrat:300">
+    <script src="assets/js/scripts.js"></script>
+</head>
+<body>
+
+
+    <div class="main-container">
+        <header class="header">
+
+            <div class="eportfolio">
+                ePortfolio
+            </div>
+
+            <div class="logo">
+                <div class="name">EDAH ŠAHINOVIĆ</div>
+            </div>
+
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="/" class="about-me">ABOUT ME</a></li>
+                        <li><a href="cv.html" class="cv">CV</a></li>
+                        <li><a href="projects.html" class="projects">PROJECTS</a></li>
+                        <li class="dropdown">
+                            <a href="" class="thesis">THESIS</a>
+                            <div class="dropdown-content">
+                                <a href="thesis-bachelor.html">BACHELOR</a>
+                                <a href="thesis-master.html">MASTER</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        
+
+        <div class="page-container">
+            
+            <h2 class="projects-line-title" style="top: 120px;">PROJECTS</h2> 
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project">
+                    <button class="project-button" onclick="toggleProject('project1')">
+                        <span class="bold-text">Applied Geoinformatics | Integrated Project:</span> Automated Parcel-based Reports Based on Open-source Technologies
+                        <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                    </button>
+                    
+                    <div class="button-image-container">
+                        <img src="/assets/images/university/project_button_images/parcelinsights_interface.png" alt="" class="button-image">
+                    </div>
+
+                    <div id="project1" class="project-details">
+                        <div class="section-title">
+                            <h2>DESCRIPTION</h2>
+                            <hr class="title-line">
+                        </div>
+            
+                        <div class="project-content">
+                            <div class="project-text">
+                                <p>Through this project, I've gained invaluable insights into the power of open-source technologies in the field of Geoinformatics. I've sharpened my skills in GIS-based web application development as well as mastering the art of scripting GIS-related automation workflows. This experience has taught me to leverage open-source technologies, equipping me with the experience to utilize OGC Web Services, Python libraries, and web development tools effectively. Furthermore, I've gained a deep appreciation for the critical role data validation plays in geospatial analysis, learning how to identify and rectify inconsistencies in the geospatial data transformation processes.</p>
+                                <p>In essence, this project is about the creation of an open-source web-based platform that generates detailed environmental reports for user-requested land parcels. It empowers users to access these reports through a user-friendly interface, combining narrative, maps, and tables to convey vital information about the environment surrounding a parcel. The project completely relies on open-source technologies to eliminate dependencies on proprietary software, paving the way for cost-effective GIS-related assessments. The ultimate aim is to facilitate quicker decision-making processes by providing accessible, accurate, and timely geospatial information to both GIS and non-GIS professionals alike.</p>
+                                <p>Moreover, this project encompassed a vital aspect of project management, which greatly enriched my skills in managing mid to large-scale projects. I learned how to effectively cope with the detailed symbiosis of time management and a structured workflow, breaking down the project into its distinct packages. This organizational approach ensured that the project progressed smoothly, meeting milestones and delivering results in a timely manner as well as reporting and dealing with the unexpected risks on the way. The management was varried out via GitHub.</p>
+                                <p class="keywords"><b>Key areas:</b> Python scripting, automation, web development, OGC Web Services, GIS, environmental reports, project management</p>
+                            </div>
+                            <!--
+                            <div class="project-image">
+                                <img src="assets/images/university/parcelinsights_squared.png" alt="Project 1">
+                            </div>
+                            -->
+                            
+                        </div>
+            
+                        <a href="https://github.com/Edah94/ParcelInsights" target="_blank">
+                            Visit the project repo:<img src="assets/images/home/github_logo.png" alt="GitHub Profile" class="github-image">
+                        </a>
+            
+                        <div class="section-title">
+                            <h2>FULL DOCUMENTATION</h2>
+                            <hr class="title-line">
+                        </div>
+                        
+                        <div class="project-pdf">
+                            <embed src="assets/downloadable/ParcelInsights_Sahinovic.pdf" width="820px" height="1190px" type="application/pdf">
+                        </div>
+            
+                        <div class="section-title">
+                            <h2>GALLERY</h2>
+                            <hr class="title-line">
+                        </div>
+            
+                        <div class="project-illustrations">
+                            <figure class="image-container">
+                                <a class="image-link" href="assets/images/university/parcelinsights_interface.png" target="_blank">
+                                    <img src="assets/images/university/parcelinsights_interface.png" alt="ParcelInsights Interface">
+                                </a>
+                                <figcaption class="image-caption"> The initial load of ParcelInsights web page</figcaption>
+                            </figure>
+                        
+                            <figure class="image-container">
+                                <a class="image-link" href="assets/images/university/ParcelInsights_poster.png" target="_blank">
+                                    <img src="assets/images/university/ParcelInsights_poster.png" alt="ParcelInsights Poster">
+                                </a>
+                                <figcaption class="image-caption">Project poster</figcaption>
+                            </figure>
+                        </div>
+                        
+            
+                        <div class="section-title">
+                            <h2>OUTPUT PARCEL REPORT SAMPLE</h2>
+                            <hr class="title-line">
+                        </div>
+                        
+                        <div class="project-pdf">
+                            <embed src="assets/downloadable/parcel_report_sample.pdf" width="820px" height="1190px" type="application/pdf">
+                        </div>
+                    </div>
+                
+                     
+                         
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project2')">
+                            <span class="bold-text">Applied Geoinformatics | Application Development:</span> Automated Residence Selection Toolbox
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/Case1_table.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project2" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>This project allowed me to experiment and delve into leveraging the Geographic Information Systems (GIS) spatial analysis and Python ArcPy scripting to build a toolbox that streamlines the complex process of multicriterial spatial analysis approach. This method takes into account various environmental and service factors to evaluate existing dwellings within Salzburg city.</p>
+                                    <p>The primary goal of this analysis is to provide homebuyers and residence seekers with a tool that considers their invidiual criteria when selecting a next place they will call home. The toolbox allows users to include the elements such as proximity of parks, bus stops, bicycle parking spaces, schools, shopping malls and restaurants, enabling them to make more informed choices. This method can be customized for different geographical and social contexts, benefiting both customers and real estate agents. While this project emphasizes the technical aspects of the method, it lays the foundation for broader applications in the future.</p>
+                                    <p class="keywords"><b>Key areas:</b> ArcGIS, Python scripting, ArcPy, multicriteria analysis</p>
+                       
+                                </div>
+                                
+                                <div class="project-image">
+                                    <img src="assets/images/university/residence_salzburg_squared.png" alt="Project 1">
+                                </div>
+                            </div>
+                
+                            <a href="https://github.com/Edah94/ArcPy_toolbox_residence_selection" target="_blank">
+                                Visit the project repo:<img src="assets/images/home/github_logo.png" alt="GitHub Profile" class="github-image">
+                            </a>
+                
+                            <div class="section-title">
+                                <h2>FULL DOCUMENTATION</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/ApplicationDevelopment_Sahinovic.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>GALLERY</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-illustrations">
+                                
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/Case1_table.png" target="_blank">
+                                        <img src="assets/images/university/Case1_table.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption"> Dwelling ranking based on criteria for Case 1 (young family with a child)</figcaption>
+                                </figure>
+                            
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/Case2_table.png" target="_blank">
+                                        <img src="assets/images/university/Case2_table.png" alt="ParcelInsights Poster">
+                                    </a>
+                                    <figcaption class="image-caption">Dwelling ranking based on criteria for Case 2 (student)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+            
+                    
+                    <!-- Project 3 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project3')">
+                            <span class="bold-text">Applied Geoinformatics | Analysis and Modeling:</span> Assessing the Photovoltaic Rooftop Potential
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/project_button_images/photovoltaic_potential_cropped.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project3" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>This short paper explores the potential of harnessing solar energy in urban communities within city of Salzburg. The study investigates the amount of generating electricity from incoming solar radiation using photovoltaic (PV) systems. The process involves in-depth exploration and utilization of the Area Solar Radiation (ASR) tool in ArcGIS to calculate solar radiation levels, which are then converted into electric power production data to assess the photovoltaic potential in these urban areas. The comprehensive investigation of the ASR method involved an extensive review of credible research papers and scholarly papers. This examination allowed me to gain a profound understanding of the method's qualities, including its complex calculations, data considerations, and the factors it includes or excludes, such as reflected radiation.</p>
+                                    <p>To estimate the PV potential, this geoprocessing involved steps like transferring the global radiation to the extent of building footprints, converting the Wh to more appropriate representation values, transforming solar radiation to electric power using a provided formula, and aggregating results to assess the total PV energy potential.</p>
+                                    <p>Throughout this course, in addition to this short paper, I have also grasped into creating structured research outline as part of the paper-writing process. Moreover, we enganged in the peer review process, providing valuable feedback on each other's research outlines. Finally, the course culminated in the creation of an elevator pitch presentation which conveyed the insights gained through GIS-based analysis. </p>
+                                    <p class="keywords"><b>Key areas:</b> Solar radiation, photovoltaic potential, renewable energy, spatial analysis, GIS</p>
+                       
+                                </div>
+                                <div class="project-image">
+                                    <img src="assets/images/university/photovoltaic_potential.png" alt="Project 1">
+                                </div>
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>FULL DOCUMENTATION</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/RooftopPotential_Sahinovic.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>GALLERY</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-illustrations">
+                                
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/photovoltaic_potential_presentation.png" target="_blank">
+                                        <img src="assets/images/university/photovoltaic_potential_presentation.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption"> Pitch elevator presentation slide</figcaption>
+                                </figure>
+            
+                            </div>
+                
+                        </div>
+            
+                    <!-- Project 4 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project4')">
+                            <span class="bold-text">Applied Geoinformatics | Spatial Data Infrastructures:</span> MIgrations GErmany
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/MIGE_intercountry_movements.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project4" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>The MIgrations GErmany (MIGE) project was a joint and comprehensive endeavor aimed at creating and visualizing migration patterns related to Germany. A pivotal aspect of the project revolved around enhancing decision-making processess for stakeholders who are deeply involved in migration-related matters such as governmental agencies, statistical bodies and migration organization. To fulfill this mission effectively, the project strategically leveraged the power of data visualization, interaction and communication through intended dashboards. </p>
+                                    <p>These dashboards offer users a dynamic and engaging way to explore migration patterns, trends and engage in interactive exploratory data analysis. The interactivity of these dashboards is a key feature, allowing users to filter data based on various criteria such as by administrative units in terms of countries or counties of origin and destination, and to specify time frames expressed in years. </p>
+                                    <p>Throughout the project and the complete course, proficiency was gained in utilizing both proprietary and open-source tools to publish datasets as OGC Web Services and integrate them into a PostgreSQL database environment. This acquired skillset allows for effective approach to managing and sharing geospatial data, ensuring that data could be accessed and utilized in real time by a wide range of stakeholders and applications.</p>
+                                    <p class="keywords"><b>Key areas:</b> Dashboard development, data acquisition and preprocessing, online geospatial data publishing, GIS architecture, metadata, stakeholder engagement</p>
+                                    
+                                    <div class="dashboard-button-container">
+                                        <button class="dashboard-button dashboard-button-black" onclick="window.open('https://geoportal22s.zgis.at/portal/apps/dashboards/8fa31ab055e840a09dd472e746ec3fc4', '_blank')">INTERCOUNTRY MIGRATION DASHBOARD</button>
+                                        <button class="dashboard-button dashboard-button-red" onclick="window.open('https://geoportal22s.zgis.at/portal/apps/insights/#/view/5fb578e5eff44d779b28178f05989774', '_blank')">INTRACOUNTRY MIGRATION DASHBOARD (DEPRECATED)</button>
+                                        <button class="dashboard-button dashboard-button-orange" onclick="window.open('https://www.arcgis.com/apps/dashboards/ef063fb62d44403c8f42003e72be4b26', '_blank')">POPULATION CHANGE DASHBOARD</button>
+                                    </div>
+                                </div>
+                                <div class="project-image">
+                                    <img src="assets/images/university/MIGE_logo.png" alt="Project 1">
+                                </div>
+                            </div>
+            
+                            
+                
+                            <a href="https://git.sbg.ac.at/s1081994/ip-gpm" target="_blank">
+                                Visit the project repo:<img src="assets/images/home/github_logo.png" alt="GitHub Profile" class="github-image">
+                            </a>
+                            
+                            
+            
+            
+                            <div class="section-title">
+                                <h2>FULL DOCUMENTATION</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/MIGE_SahinovicStobbelaar.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                            
+            
+                            
+                            <div class="section-title">
+                                <h2>GALLERY</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-illustrations">
+                                
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/MIGE_intercountry_movements.png" target="_blank">
+                                        <img src="assets/images/university/MIGE_intercountry_movements.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Intercountry movements dashboard design</figcaption>
+                                </figure>
+            
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/MIGE_intracountry_movements.png" target="_blank">
+                                        <img src="assets/images/university/MIGE_intracountry_movements.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption"> Intracountry movements dashboard design</figcaption>
+                                </figure>
+            
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/MIGE_pop_change.png" target="_blank">
+                                        <img src="assets/images/university/MIGE_pop_change.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Population change dashboard design</figcaption>
+                                </figure>
+            
+                            </div>
+                
+                        </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project5')">
+                            <span class="bold-text">Applied Geoinformatics | Geovisualization and Advanced Cartography:</span> Salzburg Student Facilities Map
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/Salzburg_student_facilities_map.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project5" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>Born out of personal necessity, the Salzburg Student Facilities Map emerged from the absence of a comprehensive resource integrating all student facilities in Salzburg. Driven by the desire to alleviate the navigation struggles of others in similar situation, I seized the oportunity to embark on this project.</p>
+                                    <p class="keywords"><b>Key areas:</b> Web Mapping, Data Visualization, Leaflet</p>
+                                </div>
+                            </div>
+            
+                            
+                
+                            <div class="section-title">
+                                <h2>INTERACTIVE MAP</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <iframe src="assets/cartography_leaflet/index.html" width="90%" height="600px" frameborder="0"></iframe>
+                            
+                
+                            
+                
+                        </div>
+
+                    <!-- Project 6 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project6')">
+                            <span class="bold-text">Applied Geoinformatics | Software Development:</span> Google Earth Tweet and WMS Mapper
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/EoT_tweet_visualization.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project6" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>The final assignment in Software Development aimed to create a Java-based solution for visualizing tweets in Google Earth. Additionally, the project's primary objectives were automation, modularity and user experience enhancement. It involved several key steps, including connecting to a Web Map Service (WMS), downloading a CSV file of tweets, converting tweets and WMS to KML format, dynamically creating color-coded polygons based on the time of tweet, and finally generating a Google Earth tour to guide users through the data. </p>
+                                    <p>To achieve modularity, the project was divided into multiple classes and methods, allowing for easy maintenance and debugging. User interaction was also a key focus, with prompts for directory selection, additional information viewing, and confirmation for launching the Google Earth.</p>
+                                    <p class="keywords"><b>Key areas:</b> Programming, automation, modularity, data conversion and representation</p>
+                       
+                                </div>
+                                <div class="project-image">
+                                    <img src="assets/images/university/EoT_logo.webp" alt="Project 1">
+                                </div>
+            
+                            </div>
+            
+                            <a href="https://git.sbg.ac.at/s1080384/EoT/-/wikis/End-of-Term-Assignment" target="_blank">
+                                Visit the project repoşitory for full project documentation and code:<img src="assets/images/home/github_logo.png" alt="GitHub Profile" class="github-image">
+                            </a>
+                
+                            <div class="section-title">
+                                <h2>FULL DOCUMENTATION</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/EoT_Sahinovic_Woehs_Zorenboehmer.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>GALLERY</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-illustrations">
+                                
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/EoT_concept.webp" target="_blank">
+                                        <img src="assets/images/university/EoT_concept.webp" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Program modular structure and interaction</figcaption>
+                                </figure>
+            
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/EoT_tweet_visualization.png" target="_blank">
+                                        <img src="assets/images/university/EoT_tweet_visualization.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Dynamic mapping of tweets in Google Earth</figcaption>
+                                </figure>
+            
+                            </div>
+                
+                        </div>
+            
+                        <!-- Project 7 -->
+                        <div class="project">
+                            <button class="project-button" onclick="toggleProject('project7')">
+                                <span class="bold-text">Applied Geoinformatics | Spatial Databases:</span> Database Backend for a WebGIS Festival App
+                                <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                            </button>
+                        
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/SD_query.png" alt="" class="button-image">
+                        </div>
+                
+                        <div id="project7" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>The final project in Spatial Databases course involved creating a SQL database to serve as the backend for a WebGIS application for a fictive festival. The objective was to organize festival content, including details about festival locations, their working hours, and the timing of stage events. The project was carried out using the tools like pgAdmin 4, QGIS, and MySQL Workbench.</p>
+                                    <p>Once the database structure was defined by designing a logical structure for the database, the implementation phase started by integrating geographic data into the database using QGIS. The data was connected to the database in Postgres management tool, establishing relationships between existing entities. Furtherly, SQL queries were performed to simulate a mobile application for festival visitors. Queries ranged from retrieving lists of festival locations with their details to determining which locations were currently open to querying whether a visitor was within the festival area and locating a nearest restroom. </p>
+                                    <p>The project not only equipped me with the skillsets to operate spatial database systems, use them for managing and analyzing spatial data, and understand the role of such systems in a GI context but also marked my first exposure to the SQL language, providing a valuable foundation for future data management and analysis endeavors.</p>
+                                    <p class="keywords"><b>Key areas:</b> Database management, SQL queries, GIS</p>
+                       
+                                </div>
+                                <div class="project-image">
+                                    <img src="assets/images/university/SD_logo.png" alt="Project 1">
+                                </div>
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>FULL DOCUMENTATION</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/SD_Backend_for_WebGIS.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                
+                            <div class="section-title">
+                                <h2>GALLERY</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-illustrations">
+                                
+                                <figure class="image-container">
+                                    <a class="image-link" href="assets/images/university/SD_data_model.png" target="_blank">
+                                        <img src="assets/images/university/SD_data_model.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Data model for the festival app</figcaption>
+                                    
+                                    <a class="image-link" href="assets/images/university/SD_query.png" target="_blank">
+                                        <img src="assets/images/university/SD_query.png" alt="ParcelInsights Interface">
+                                    </a>
+                                    <figcaption class="image-caption">Sample query: Festival entities open at 18:15</figcaption>
+                                
+                                </figure>
+            
+                            </div>
+                
+                        </div>
+
+                    <!-- Project 8 -->
+                    <div class="project">
+                        <button class="project-button" onclick="toggleProject('project8')">
+                            <span class="bold-text">Gaudi LCC | Tourist arrangements:</span> Designing travel routes
+                            <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                        </button>
+                        
+                        <div class="button-image-container">
+                            <img src="/assets/images/university/Tourist_arrangements.png" alt="" class="button-image">
+                        </div>
+
+                        <div id="project8" class="project-details">
+                            <div class="section-title">
+                                <h2>DESCRIPTION</h2>
+                                <hr class="title-line">
+                            </div>
+                
+                            <div class="project-content">
+                                <div class="project-text">
+                                    <p>Within the dynamic environment of Gaudi Lufthansa City Center, I have actively contributed to the innovation and refinement of travel arrangements. By participating in the design and optimization of both new and existing travel plans, I have strived to enhance the overall travel experience for clients. This involved ensuring that each itinerary is tailored to meet the unique needs and preferences of traveles.</p>
+                                    <p>Each itinerary requires careful consideration of factors such as destination preferences, time constraints, and budgetary considerations. With this, I have designed maps that vividly depict the travel routes, offering clarity and insight into the journey ahead for our clients. They offer a comprehensive overview of the planned routes, highlighting key destinations, landmarks, and points of interest along the way.</p>
+                                    <p class="keywords"><b>Key areas:</b> GIS, Design</p>
+                       
+                                </div>
+                                
+            
+                            </div>
+            
+                            
+                
+                            <div class="section-title">
+                                <h2>TOURIST ARRANGEMENT (1)</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/Gaudi_BiH_CG.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                            
+                            <div class="section-title">
+                                <h2>TOURIST ARRANGEMENT (2)</h2>
+                                <hr class="title-line">
+                            </div>
+                            
+                            <div class="project-pdf">
+                                <embed src="assets/downloadable/Gaudi_Ekskurzija.pdf" width="820px" height="1190px" type="application/pdf">
+                            </div>
+                            
+                
+                            
+                
+                        </div>
+
+                        <!-- Project 9 -->
+                        <div class="project">
+                            <button class="project-button" onclick="toggleProject('project9')">
+                                <span class="bold-text">Independent | Spatial Analysis and Strategic Planning in Business Operations</span>
+                                <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                            </button>
+                            
+                            <div class="button-image-container">
+                                <img src="/assets/images/university/Alim.png" alt="" class="button-image">
+                            </div>
+    
+                            <div id="project9" class="project-details">
+                                <div class="section-title">
+                                    <h2>DESCRIPTION</h2>
+                                    <hr class="title-line">
+                                </div>
+                    
+                                <div class="project-content">
+                                    <div class="project-text">
+                                        <p>The project undertaken for "ALIM" LLC. showcases the integration of various software for data collection, processing and application in routine tasks and decision-making. It delves into geographic regional differentiation within Bosnia and Herzegovina by existing branches of company, not only mapping out the current state of market coverage but also setting a strategic framework for future expansion. This anticipates the establishment of new branches to enhance territorial coverage, guiding the company towards informed decisions on optimizing service accessibility and reinforcing market presence in potential areas.</p>
+                                        <p class="keywords"><b>Key areas:</b> GIS, regional differentiation, logistics optimization, decision-making processes</p>
+                           
+                                    </div>
+                                    
+                
+                                </div>
+                
+                                
+                    
+                                <div class="section-title">
+                                    <h2>FULL DOCUMENTATION</h2>
+                                    <hr class="title-line">
+                                </div>
+                                
+                                <div class="project-pdf">
+                                    <embed src="assets/downloadable/Izvjestaj.pdf" width="820px" height="1190px" type="application/pdf">
+                                </div>
+                                
+                                
+                    
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- Project 10 -->
+                        <div class="project">
+                            <button class="project-button" onclick="toggleProject('project10')">
+                                <span class="bold-text">Independent | Freelance Cartography</span>
+                                <img class="icon" src="assets/images/university/plus_icon.png" alt="Expand Icon">
+                            </button>
+                            
+                            <div class="button-image-container">
+                                <img src="/assets/images/university/Independent_Cartography_Button_Image.png" alt="" class="button-image">
+                            </div>
+    
+                            <div id="project10" class="project-details">
+                                <div class="section-title">
+                                    <h2>DESCRIPTION</h2>
+                                    <hr class="title-line">
+                                </div>
+                    
+                                <div class="project-content">
+                                    <div class="project-text">
+                                        <p>Here you can explore a gallery showcasing my independent cartographic endeavors, featuring a diverse array of maps crafted with attention to detail.</p>
+                           
+                                    </div>
+                                    
+                
+                                </div>
+                
+                                
+                    
+                                <div class="section-title">
+                                    <h2>GALLERY</h2>
+                                    <hr class="title-line">
+                                </div>
+                                
+                                <div class="project-illustrations">
+                                
+                                    <figure class="image-container">
+                                        <a class="image-link" href="assets/images/university/cartography_independent/City Light 2_resize40.jpg" target="_blank">
+                                            <img src="assets/images/university/cartography_independent/City Light 2_resize40.jpg" alt="ParcelInsights Interface">
+                                        </a>
+                                        <figcaption class="image-caption">Tourist Map of Municipality Visoko (city billboard B4 format, unfinished)</figcaption>
+                                        
+                                        <a class="image-link" href="assets/images/university/cartography_independent/Visoko_bilbord_cut_resize20.png" target="_blank">
+                                            <img src="assets/images/university/cartography_independent/Visoko_bilbord_cut_resize20.png" alt="ParcelInsights Interface">
+                                        </a>
+                                        <figcaption class="image-caption">Tourist Map of Municipality Visoko (city billboard B2 format, unfinished)</figcaption>
+                                        
+                                        <div class="dash-line"></div>
+
+                                        <a class="image-link" href="assets/images/university/cartography_independent/Visoko.jpeg" target="_blank">
+                                            <img src="assets/images/university/cartography_independent/Visoko.jpeg" alt="ParcelInsights Interface">
+                                        </a>
+                                        <figcaption class="image-caption">Map of Visoko's Pyramids (brochure A4 format) </figcaption>
+                                        
+                                        <div class="dash-line"></div>
+
+                                        <a class="image-link" href="assets/images/university/cartography_independent/Soline_ver2.jpeg" target="_blank">
+                                            <img src="assets/images/university/cartography_independent/Soline_ver2.jpeg" alt="ParcelInsights Interface">
+                                        </a>
+                                        <figcaption class="image-caption">Hotel Soline Tourist Map (brochure A4 format)</figcaption>
+                                        
+                                        <div class="dash-line"></div>
+
+                                        <a class="image-link" href="assets/images/university/cartography_independent/Visoko_turisticka_karta.png" target="_blank">
+                                            <img src="assets/images/university/cartography_independent/Visoko_turisticka_karta.png" alt="ParcelInsights Interface">
+                                        </a>
+                                        <figcaption class="image-caption">Tourist Map of City Visoko (brochure A4 format)</figcaption>
+
+                                    </figure>
+                
+                                </div>
+                                
+                                
+                    
+                            </div>
+
+
+                        </div>
+    
+    
+        </div>
+
+
+    </div>
+    
+    
+    <!-- Your existing JavaScript code -->
+    <script>
+        // Add an event listener to listen for scroll events on the window
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (lastScrollTop > 20) {
+                // If user scrolled down more than 20 pixels, hide the header
+                header.classList.add('hidden');
+            } else {
+                // If user scrolls up, show the header
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
+    
+
+
+</body>
+</html>

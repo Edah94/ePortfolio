@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edah Šahinović | Curriculum Vitae</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Google Fonts link here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300|Raleway:200|Montserrat:300">
+    <script src="assets/js/scripts.js"></script>
+</head>
+<body>
+    
+    <div class="main-container">
+        <header class="header">
+
+            <div class="eportfolio">
+                ePortfolio
+            </div>
+
+            <div class="logo">
+                <div class="name">EDAH ŠAHINOVIĆ</div>
+            </div>
+
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="/" class="about-me">ABOUT ME</a></li>
+                        <li><a href="cv.html" class="cv">CV</a></li>
+                        <li><a href="projects.html" class="projects">PROJECTS</a></li>
+                        <li class="dropdown">
+                            <a href="" class="thesis">THESIS</a>
+                            <div class="dropdown-content">
+                                <a href="thesis-bachelor.html">BACHELOR</a>
+                                <a href="thesis-master.html">MASTER</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div class="page-container">
+            <h2 class="curriculum-vitae-line-title" style="top: 120px;">UP-TO-DATE CURRICULUM VITAE</h2>
+            <div class="section-title" style="margin-top: 120px;">
+                
+                
+            </div>
+            <div class="cv-pdf">
+                <div class="embed-container">
+                    <embed src="assets/downloadable/CV_EdahSahinovic.pdf" width="100%" height="1056px" type="application/pdf">
+                </div>
+            </div>   
+        </div>
+    </div>
+   
+    <!-- Your existing JavaScript code -->
+    <script>
+        // Add an event listener to listen for scroll events on the window
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (lastScrollTop > 20) {
+                // If user scrolled down more than 20 pixels, hide the header
+                header.classList.add('hidden');
+            } else {
+                // If user scrolls up, show the header
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
