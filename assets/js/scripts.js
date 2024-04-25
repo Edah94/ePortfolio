@@ -17,7 +17,9 @@ function toggleProject(projectId) {
             imageContainer.style.display = 'none'; //modified this one
         }
     } else {
-        imageContainer.style.display = 'block';
+        if (imageContainer) {
+            imageContainer.style.display = 'block';
+        }
         project.style.display = "none";
         icon.src = "assets/images/university/plus_icon.png"; // Change to plus icon
         icon.alt = "Expand Icon";

@@ -22,15 +22,19 @@
                 </div>
 
                 <div class="logo">
-                    <div class="name">EDAH ŠAHINOVIĆ</div>
+                    <div class="name">
+                        <a href="/">EDAH ŠAHINOVIĆ</a>
+                    </div>
                 </div>
                 
                 <div class="navigation">
                     <nav>
                         <ul>
-                            <li><a href="/" class="about-me">ABOUT ME</a></li>
                             <li><a href="cv.html" class="cv">CV</a></li>
                             <li><a href="projects.html" class="projects">PROJECTS</a></li>
+                            <li><a href="certificates.html" class="certificates">
+                                CERT<span class="cert-full">IFICATES</span>
+                            </a></li>
                             <li class="dropdown">
                                 <a href="" class="thesis">THESIS</a>
                                 <div class="dropdown-content">
@@ -45,7 +49,7 @@
             </header>
     
         <div class="page-container">
-            <div class="section-title" style="margin-top: 100px;">
+            <div class="section-title" style="margin-top: 150px;">
                 <h2>DESCRIPTION</h2>
                 <hr class="title-line">
 
@@ -63,7 +67,20 @@
         </div>
     </div>
     
-    
+    <script>
+        // Add an event listener to listen for scroll events on the window
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (lastScrollTop > 20) {
+                // If user scrolled down more than 20 pixels, hide the header
+                header.classList.add('hidden');
+            } else {
+                // If user scrolls up, show the header
+                header.classList.remove('hidden');
+            }
+        });
+    </script>
    
 
 
