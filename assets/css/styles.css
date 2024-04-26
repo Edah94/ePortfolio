@@ -72,6 +72,11 @@ header.hidden {
 .logo .name a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo .name a:hover {
+    color: #ff6600;
 }
 
 .eportfolio {
@@ -525,7 +530,6 @@ h1 {
 
 .project-text {
     flex: 1; /* Allow text to grow and occupy available space */
-    width: 100%;
     padding: 0 120px;
 }
 
@@ -611,12 +615,13 @@ h1 {
 .section-title {
     text-align: center; /* Center-align the title and line */
     margin-bottom: 20px; /* Add some spacing below the title */
-    margin-top: 50px;
 }
 
 .section-title h2 {
     font-size: 24px; /* Adjust the font size to your preference */
     font-weight: bold; /* Make the title bold */
+    margin-top: 0;
+    padding-top: 24px;
 }
 
 .title-line {
