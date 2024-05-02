@@ -46,6 +46,7 @@ header.hidden {
     max-width: 1200px;
     margin: auto; /* This will center the container horizontally */
     min-height: 100vh; /* Ensure the container at least fills the viewport height */
+    padding-bottom: 32px;
 }
 
 
@@ -442,7 +443,8 @@ h1 {
 
 
 .button-image-container {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 150px; /* Set the height of the container */
     overflow: hidden; /* Hide any overflow */
 }
@@ -450,9 +452,7 @@ h1 {
 .button-image {
     position: relative;
     width: 100%; /* Make the image span across the whole container */
-    height: auto; /* Maintain aspect ratio */
-    left: 00px;
-    bottom: 140px;
+    height: fit-content; /* Maintain aspect ratio */
 }
 
 .project-button-and-image-container {
@@ -621,7 +621,7 @@ h1 {
     font-size: 24px; /* Adjust the font size to your preference */
     font-weight: bold; /* Make the title bold */
     margin-top: 0;
-    padding-top: 24px;
+    padding: 24px 24px 0 24px;
 }
 
 .title-line {
