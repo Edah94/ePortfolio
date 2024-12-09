@@ -18,8 +18,8 @@ Building on this initial static website, a new version has emerged, made more dy
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/Edah94/ePortfolio.git
 
 2. Navigate to the project folder
 
-3. Double-click on index.html in order to open the website
+3. Double-click on the **index.html** file to launch the website in your default web browser.
